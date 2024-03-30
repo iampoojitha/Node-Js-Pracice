@@ -1,5 +1,5 @@
-var calc = require('./calc')
+var fs = require('fs')
 
-res = calc.add(4,5)
-
-console.log("output is "+res)
+fs.readFile('calc.js','utf-8', function(err,data){
+    console.log(data)
+})
