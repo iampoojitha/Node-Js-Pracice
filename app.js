@@ -1,5 +1,5 @@
 var fs = require('fs')
 
-fs.writeFile('calc1.js','console.log("file creation")', function(err){
-    console.log("data saved")
+fs.readFile('calc1.js', function(err,data){
+    console.log(data.toString())
 })
